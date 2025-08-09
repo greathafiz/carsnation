@@ -1,103 +1,225 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import {
+  getFeaturedCars,
+  getNewlyArrivedCars,
+  formatPrice,
+  formatPriceUSD,
+} from "@/lib/cars";
+import { Car } from "@/types/car";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [searchTerm, setSearchTerm] = useState("");
+  const featuredCars = getFeaturedCars();
+  const newlyArrived = getNewlyArrivedCars();
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchTerm.trim()) {
+      window.location.href = `/cars?search=${encodeURIComponent(searchTerm)}`;
+    }
+  };
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-zinc-800 via-zinc-900 to-black text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Find Your Perfect Car
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-zinc-300">
+              Quality foreign used cars with professional inspection services
+            </p>
+
+            {/* Search Bar */}
+            <form onSubmit={handleSearch} className="max-w-2xl mx-auto">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <input
+                  type="text"
+                  placeholder="Search by brand, model, or year..."
+                  className="flex-1 px-6 py-4 text-zinc-900 bg-white rounded-lg text-lg border-2 border-transparent focus:border-orange-500 focus:outline-none"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                />
+                <button
+                  type="submit"
+                  className="bg-orange-600 hover:bg-orange-700 px-8 py-4 rounded-lg font-semibold text-lg text-white transition-colors"
+                >
+                  Search Cars
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      </section>
+
+      {/* Quick Stats */}
+      <section className="bg-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div className="bg-orange-50 p-6 rounded-lg border border-orange-100">
+              <div className="text-3xl font-bold text-orange-600 mb-2">22</div>
+              <div className="text-zinc-600">Inspections This Month</div>
+            </div>
+            <div className="bg-emerald-50 p-6 rounded-lg border border-emerald-100">
+              <div className="text-3xl font-bold text-emerald-600 mb-2">
+                150+
+              </div>
+              <div className="text-zinc-600">Cars Available</div>
+            </div>
+            <div className="bg-zinc-50 p-6 rounded-lg border border-zinc-200">
+              <div className="text-3xl font-bold text-zinc-700 mb-2">98%</div>
+              <div className="text-zinc-600">Customer Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Cars */}
+      <section className="py-16 bg-zinc-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+              Featured Cars
+            </h2>
+            <p className="text-xl text-zinc-600">
+              Hand-picked premium vehicles for discerning buyers
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            {featuredCars.slice(0, 6).map((car) => (
+              <CarCard key={car.id} car={car} />
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/cars"
+              className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+            >
+              View All Cars
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Newly Arrived */}
+      {newlyArrived.length > 0 && (
+        <section className="bg-white py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+                Newly Arrived
+              </h2>
+              <p className="text-xl text-zinc-600">
+                Fresh inventory just in from abroad
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {newlyArrived.slice(0, 4).map((car) => (
+                <CarCard key={car.id} car={car} showNewTag={true} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* CTA Section */}
+      <section className="bg-zinc-800 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Ready to Find Your Dream Car?
+          </h2>
+          <p className="text-xl mb-8 text-zinc-300">
+            Browse our complete inventory or get in touch with our experts
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/cars"
+              className="bg-white text-zinc-800 hover:bg-zinc-100 px-8 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Browse All Cars
+            </Link>
+            <a
+              href="https://wa.me/+2349026446912"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+            >
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+interface CarCardProps {
+  car: Car;
+  showNewTag?: boolean;
+}
+
+function CarCard({ car, showNewTag = false }: CarCardProps) {
+  return (
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-zinc-200">
+      <div className="relative">
+        <Image
+          src={car.images[0]}
+          alt={`${car.year} ${car.brand} ${car.model}`}
+          width={400}
+          height={300}
+          className="w-full h-48 object-cover"
+        />
+        {showNewTag && car.newly_arrived && (
+          <div className="absolute top-4 left-4">
+            <span className="bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+              Newly Arrived
+            </span>
+          </div>
+        )}
+        {car.featured && (
+          <div className="absolute top-4 right-4">
+            <span className="bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+              Featured
+            </span>
+          </div>
+        )}
+      </div>
+
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-zinc-900 mb-2">
+          {car.year} {car.brand} {car.model}
+        </h3>
+
+        <div className="space-y-2 mb-4">
+          <p className="text-zinc-600">📍 {car.location}</p>
+          <p className="text-zinc-600">🚗 {car.mileage.toLocaleString()} km</p>
+          <p className="text-zinc-600">⚙️ {car.transmission}</p>
+        </div>
+
+        <div className="flex flex-col gap-1 mb-4">
+          <div className="text-2xl font-bold text-orange-600">
+            {formatPrice(car.price)}
+          </div>
+          <div className="text-sm text-zinc-500">
+            ({formatPriceUSD(car.priceUSD)})
+          </div>
+        </div>
+
+        <Link
+          href={`/cars/${car.id}`}
+          className="w-full bg-orange-600 hover:bg-orange-700 text-white text-center py-2 px-4 rounded-lg font-semibold transition-colors block"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          View Details
+        </Link>
+      </div>
     </div>
   );
 }

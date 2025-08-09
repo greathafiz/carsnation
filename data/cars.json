@@ -1,0 +1,279 @@
+[
+  {
+    "id": "1",
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2020,
+    "price": 8500000,
+    "priceUSD": 5500,
+    "mileage": 45000,
+    "transmission": "Automatic",
+    "fuel": "Petrol",
+    "condition": "Foreign Used",
+    "location": "Lagos",
+    "description": "Clean 2020 Toyota Camry with excellent engine condition. Very neat interior and exterior.",
+    "features": [
+      "Air Conditioning",
+      "Power Steering",
+      "Central Lock",
+      "Electric Windows",
+      "ABS",
+      "Airbags"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop"
+    ],
+    "featured": true,
+    "newly_arrived": false,
+    "date_added": "2025-08-01"
+  },
+  {
+    "id": "2",
+    "brand": "Honda",
+    "model": "Accord",
+    "year": 2019,
+    "price": 7200000,
+    "priceUSD": 4650,
+    "mileage": 52000,
+    "transmission": "Automatic",
+    "fuel": "Petrol",
+    "condition": "Foreign Used",
+    "location": "Abuja",
+    "description": "2019 Honda Accord in excellent condition. Well maintained with complete service records.",
+    "features": [
+      "Air Conditioning",
+      "Power Steering",
+      "Cruise Control",
+      "Bluetooth",
+      "Backup Camera"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop"
+    ],
+    "featured": false,
+    "newly_arrived": true,
+    "date_added": "2025-08-05"
+  },
+  {
+    "id": "3",
+    "brand": "Lexus",
+    "model": "ES 350",
+    "year": 2021,
+    "price": 12000000,
+    "priceUSD": 7750,
+    "mileage": 28000,
+    "transmission": "Automatic",
+    "fuel": "Petrol",
+    "condition": "Foreign Used",
+    "location": "Lagos",
+    "description": "Luxury 2021 Lexus ES 350. Premium features and pristine condition throughout.",
+    "features": [
+      "Leather Seats",
+      "Sunroof",
+      "Navigation",
+      "Premium Sound",
+      "Heated Seats",
+      "Keyless Entry"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&h=600&fit=crop"
+    ],
+    "featured": true,
+    "newly_arrived": false,
+    "date_added": "2025-07-28"
+  },
+  {
+    "id": "4",
+    "brand": "BMW",
+    "model": "3 Series",
+    "year": 2018,
+    "price": 9800000,
+    "priceUSD": 6330,
+    "mileage": 65000,
+    "transmission": "Automatic",
+    "fuel": "Petrol",
+    "condition": "Foreign Used",
+    "location": "Port Harcourt",
+    "description": "Sporty BMW 3 Series with excellent performance and luxury features.",
+    "features": [
+      "Sport Package",
+      "Premium Wheels",
+      "Dual Climate",
+      "iDrive System",
+      "Xenon Lights"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&h=600&fit=crop"
+    ],
+    "featured": false,
+    "newly_arrived": true,
+    "date_added": "2025-08-07"
+  },
+  {
+    "id": "5",
+    "brand": "Mercedes-Benz",
+    "model": "C-Class",
+    "year": 2020,
+    "price": 13500000,
+    "priceUSD": 8720,
+    "mileage": 35000,
+    "transmission": "Automatic",
+    "fuel": "Petrol",
+    "condition": "Foreign Used",
+    "location": "Lagos",
+    "description": "Elegant Mercedes-Benz C-Class with premium appointments and advanced safety features.",
+    "features": [
+      "AMG Package",
+      "Panoramic Roof",
+      "Premium Sound",
+      "Advanced Safety",
+      "LED Lights"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop"
+    ],
+    "featured": true,
+    "newly_arrived": false,
+    "date_added": "2025-07-25"
+  },
+  {
+    "id": "6",
+    "brand": "Nissan",
+    "model": "Altima",
+    "year": 2019,
+    "price": 6500000,
+    "priceUSD": 4200,
+    "mileage": 48000,
+    "transmission": "Automatic",
+    "fuel": "Petrol",
+    "condition": "Foreign Used",
+    "location": "Kano",
+    "description": "Reliable 2019 Nissan Altima with fuel-efficient engine and comfortable interior.",
+    "features": [
+      "CVT Transmission",
+      "Smart Key",
+      "Rear Camera",
+      "Touch Screen",
+      "USB Ports"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&h=600&fit=crop"
+    ],
+    "featured": false,
+    "newly_arrived": false,
+    "date_added": "2025-07-20"
+  },
+  {
+    "id": "7",
+    "brand": "Ford",
+    "model": "Explorer",
+    "year": 2020,
+    "price": 11200000,
+    "priceUSD": 7240,
+    "mileage": 41000,
+    "transmission": "Automatic",
+    "fuel": "Petrol",
+    "condition": "Foreign Used",
+    "location": "Abuja",
+    "description": "Spacious Ford Explorer SUV perfect for families. Excellent condition with 7-seater capacity.",
+    "features": [
+      "7 Seats",
+      "4WD",
+      "Towing Package",
+      "Third Row",
+      "Power Liftgate",
+      "SYNC 3"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&h=600&fit=crop"
+    ],
+    "featured": false,
+    "newly_arrived": true,
+    "date_added": "2025-08-06"
+  },
+  {
+    "id": "8",
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "year": 2021,
+    "price": 5800000,
+    "priceUSD": 3750,
+    "mileage": 22000,
+    "transmission": "Automatic",
+    "fuel": "Petrol",
+    "condition": "Foreign Used",
+    "location": "Lagos",
+    "description": "Nearly new 2021 Hyundai Elantra with low mileage and comprehensive warranty.",
+    "features": [
+      "Apple CarPlay",
+      "Android Auto",
+      "Lane Keep Assist",
+      "Forward Collision Warning",
+      "Wireless Charging"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1607603750916-9c2d2ba5a78e?w=800&h=600&fit=crop"
+    ],
+    "featured": false,
+    "newly_arrived": true,
+    "date_added": "2025-08-08"
+  },
+  {
+    "id": "9",
+    "brand": "Volkswagen",
+    "model": "Jetta",
+    "year": 2018,
+    "price": 6200000,
+    "priceUSD": 4000,
+    "mileage": 58000,
+    "transmission": "Automatic",
+    "fuel": "Petrol",
+    "condition": "Foreign Used",
+    "location": "Ibadan",
+    "description": "Well-maintained Volkswagen Jetta with German engineering and reliability.",
+    "features": [
+      "Turbo Engine",
+      "Digital Cockpit",
+      "App-Connect",
+      "Blind Spot Monitor",
+      "Rear Cross Traffic Alert"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&h=600&fit=crop"
+    ],
+    "featured": false,
+    "newly_arrived": false,
+    "date_added": "2025-07-18"
+  },
+  {
+    "id": "10",
+    "brand": "Mazda",
+    "model": "CX-5",
+    "year": 2020,
+    "price": 8900000,
+    "priceUSD": 5750,
+    "mileage": 39000,
+    "transmission": "Automatic",
+    "fuel": "Petrol",
+    "condition": "Foreign Used",
+    "location": "Lagos",
+    "description": "Stylish Mazda CX-5 crossover SUV with premium interior and advanced safety features.",
+    "features": [
+      "AWD",
+      "Bose Audio",
+      "Head-Up Display",
+      "Adaptive Cruise Control",
+      "Smart Brake Support"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&h=600&fit=crop"
+    ],
+    "featured": false,
+    "newly_arrived": false,
+    "date_added": "2025-07-22"
+  }
+]
