@@ -6,7 +6,17 @@ import Link from "next/link";
 import { getAllCars, formatPrice, formatPriceUSD } from "@/lib/cars";
 import { Car, SearchFilters } from "@/types/car";
 
+import { Suspense } from "react";
+
 export default function CarsPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <CarsPageContent />
+    </Suspense>
+  );
+}
+
+function CarsPageContent() {
   const searchParams = useSearchParams();
   const [cars, setCars] = useState<Car[]>([]);
   const [filters, setFilters] = useState<SearchFilters>({});
