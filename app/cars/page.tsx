@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { getAllCars, formatPrice, formatPriceUSD } from "@/lib/cars";
 import { Car, SearchFilters } from "@/types/car";
-
 import { Suspense } from "react";
 
 export default function CarsPage() {
@@ -239,7 +238,7 @@ function CarsPageContent() {
       </div>
 
       {/* Cars Grid */}
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
         {filteredAndSortedCars.map((car) => (
           <CarCard key={car.id} car={car} />
         ))}

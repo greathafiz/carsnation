@@ -506,38 +506,26 @@ export default function AdminPage() {
                         min="0"
                         className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-zinc-600"
                         value={formData.price}
-                        onChange={(e) =>
+                        onChange={(e) => {
+                          const ngnPrice = e.target.value
+                            ? Number(e.target.value)
+                            : "";
+                          const usdPrice = ngnPrice
+                            ? Math.round(ngnPrice / 1500)
+                            : "";
                           setFormData({
                             ...formData,
-                            price: e.target.value ? Number(e.target.value) : "",
-                          })
-                        }
+                            price: ngnPrice,
+                            priceUSD: usdPrice,
+                          });
+                        }}
                       />
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="form-price-usd"
-                        className="block text-sm font-medium text-gray-700 mb-2"
-                      >
-                        Price (USD) *
-                      </label>
-                      <input
-                        id="form-price-usd"
-                        type="number"
-                        required
-                        min="0"
-                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-zinc-600"
-                        value={formData.priceUSD}
-                        onChange={(e) =>
-                          setFormData({
-                            ...formData,
-                            priceUSD: e.target.value
-                              ? Number(e.target.value)
-                              : "",
-                          })
-                        }
-                      />
+                      {formData.priceUSD && (
+                        <div className="mt-1 text-sm text-gray-500">
+                          &asymp; {formatPriceUSD(formData.priceUSD)}
+                          USD
+                        </div>
+                      )}
                     </div>
 
                     <div>
