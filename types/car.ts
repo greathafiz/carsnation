@@ -37,3 +37,25 @@ export interface BookingForm {
   preferredDate: string;
   message: string;
 }
+
+export interface CarSubmission {
+  id: string;
+  ownerName: string;
+  ownerPhone: string;
+  ownerEmail: string;
+  brand: string;
+  model: string;
+  year: number;
+  mileage: number;
+  asking_price: number;
+  transmission: string;
+  fuel: string;
+  condition: string;
+  location: string;
+  description: string;
+  features: string[];
+  images: string[];
+  idDocument?: File;
+  status: "pending" | "approved" | "rejected";
+  submittedDate: string;
+}

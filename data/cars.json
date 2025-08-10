@@ -3,45 +3,45 @@
     "id": "1",
     "brand": "Toyota",
     "model": "Camry",
-    "year": 2020,
-    "price": 8500000,
-    "priceUSD": 5500,
+    "year": 2013,
+    "price": 10600000,
+    "priceUSD": 6919.64,
     "mileage": 45000,
     "transmission": "Automatic",
     "fuel": "Petrol",
     "condition": "Foreign Used",
-    "location": "Lagos",
-    "description": "Clean 2020 Toyota Camry with excellent engine condition. Very neat interior and exterior.",
+    "location": "Abuja",
+    "description": "Clean 2013 Toyota Camry with excellent engine condition. Very neat interior and exterior.",
     "features": [
       "Air Conditioning",
       "Power Steering",
       "Central Lock",
       "Electric Windows",
-      "ABS",
+      "Anti-lock Braking System (ABS)",
       "Airbags"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop"
+      "https://pbs.twimg.com/media/Gx4w99FWMAASr_5?format=jpg&name=large",
+      "https://pbs.twimg.com/media/Gx4w99CWsAEeEas?format=jpg&name=large",
+      "https://pbs.twimg.com/media/Gx4w98-W4AAwd-g?format=jpg&name=large"
     ],
     "featured": true,
-    "newly_arrived": false,
-    "date_added": "2025-08-01"
+    "newly_arrived": true,
+    "date_added": "2025-08-09"
   },
   {
     "id": "2",
     "brand": "Honda",
-    "model": "Accord",
-    "year": 2019,
-    "price": 7200000,
-    "priceUSD": 4650,
+    "model": "Civic Coupe",
+    "year": 2012,
+    "price": 8800000,
+    "priceUSD": 5744.61,
     "mileage": 52000,
     "transmission": "Automatic",
     "fuel": "Petrol",
     "condition": "Foreign Used",
     "location": "Abuja",
-    "description": "2019 Honda Accord in excellent condition. Well maintained with complete service records.",
+    "description": "Foreign used 2012 Honda Civic Coupe in excellent condition. Well maintained with complete service records.",
     "features": [
       "Air Conditioning",
       "Power Steering",
@@ -50,20 +50,21 @@
       "Backup Camera"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop"
+      "https://pbs.twimg.com/media/Gx242iNXIAAOzO-?format=jpg&name=large",
+      "https://pbs.twimg.com/media/Gx242iNXcAA6qSw?format=jpg&name=large",
+      "https://pbs.twimg.com/media/Gx242hwW4AAslub?format=jpg&name=large"
     ],
     "featured": false,
     "newly_arrived": true,
-    "date_added": "2025-08-05"
+    "date_added": "2025-08-08"
   },
   {
     "id": "3",
     "brand": "Lexus",
-    "model": "ES 350",
-    "year": 2021,
-    "price": 12000000,
-    "priceUSD": 7750,
+    "model": "RX 350",
+    "year": 2015,
+    "price": 16000000,
+    "priceUSD": 10444.74,
     "mileage": 28000,
     "transmission": "Automatic",
     "fuel": "Petrol",
@@ -71,6 +72,7 @@
     "location": "Lagos",
     "description": "Luxury 2021 Lexus ES 350. Premium features and pristine condition throughout.",
     "features": [
+      "2015 Upgrade",
       "Leather Seats",
       "Sunroof",
       "Navigation",
@@ -79,8 +81,9 @@
       "Keyless Entry"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&h=600&fit=crop"
+      "https://pbs.twimg.com/media/Gxnh0BGXYAAMMH1?format=jpg&name=large",
+      "https://pbs.twimg.com/media/Gxnhz_4WsAEWcIX?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GxqTFdKWQAAcv6m?format=jpg&name=large"
     ],
     "featured": true,
     "newly_arrived": false,
@@ -89,52 +92,67 @@
   {
     "id": "4",
     "brand": "BMW",
-    "model": "3 Series",
+    "model": "328i",
     "year": 2018,
-    "price": 9800000,
-    "priceUSD": 6330,
+    "price": 14500000,
+    "priceUSD": 9465.55,
     "mileage": 65000,
     "transmission": "Automatic",
     "fuel": "Petrol",
     "condition": "Foreign Used",
     "location": "Port Harcourt",
-    "description": "Sporty BMW 3 Series with excellent performance and luxury features.",
+    "description": "Well-maintained 2018 BMW 328i offering a blend of sporty performance and luxury comfort. Features a turbocharged engine, premium interior, advanced technology, and safety systems. Ideal for drivers seeking dynamic handling and refined style.",
     "features": [
       "Sport Package",
-      "Premium Wheels",
-      "Dual Climate",
-      "iDrive System",
-      "Xenon Lights"
+      "Premium Alloy Wheels",
+      "Dual Zone Climate Control",
+      "BMW iDrive Infotainment System",
+      "Xenon Headlights",
+      "Leather Upholstery",
+      "Power Adjustable Seats",
+      "Bluetooth Connectivity",
+      "Rearview Camera",
+      "Keyless Entry and Start"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&h=600&fit=crop"
+      "https://pbs.twimg.com/media/GxBsTdVWYAEq64h?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GxBsTdTXUAAuRZr?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GxBsTdNWwAAuYkU?format=jpg&name=large"
     ],
     "featured": false,
-    "newly_arrived": true,
-    "date_added": "2025-08-07"
+    "newly_arrived": false,
+    "date_added": "2025-07-29"
   },
   {
     "id": "5",
     "brand": "Mercedes-Benz",
-    "model": "C-Class",
-    "year": 2020,
-    "price": 13500000,
-    "priceUSD": 8720,
+    "model": "C300",
+    "year": 2017,
+    "price": 27000000,
+    "priceUSD": 17625.51,
     "mileage": 35000,
     "transmission": "Automatic",
     "fuel": "Petrol",
     "condition": "Foreign Used",
     "location": "Lagos",
-    "description": "Elegant Mercedes-Benz C-Class with premium appointments and advanced safety features.",
+    "description": "Elegant Mercedes-Benz C300 with premium appointments and advanced safety features.",
     "features": [
-      "AMG Package",
-      "Panoramic Roof",
-      "Premium Sound",
-      "Advanced Safety",
-      "LED Lights"
+      "Leather Seats",
+      "Panoramic Sunroof",
+      "AMG Sport Package",
+      "Navigation System",
+      "Bluetooth Connectivity",
+      "Backup Camera",
+      "Blind Spot Assist",
+      "LED Headlights",
+      "Heated Front Seats",
+      "Dual Zone Climate Control"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop"
+      "https://pbs.twimg.com/media/Gxku89uWIAAqPK3?format=jpg&name=large",
+      "https://pbs.twimg.com/media/Gxku89uW0AIAdtX?format=jpg&name=large",
+      "https://pbs.twimg.com/media/Gxku89wWYAAnSOE?format=jpg&name=large",
+      "https://pbs.twimg.com/media/Gxku89sW8AAXo9G?format=jpg&name=large"
     ],
     "featured": true,
     "newly_arrived": false,
@@ -142,26 +160,33 @@
   },
   {
     "id": "6",
-    "brand": "Nissan",
-    "model": "Altima",
-    "year": 2019,
-    "price": 6500000,
-    "priceUSD": 4200,
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "year": 2014,
+    "price": 8000000,
+    "priceUSD": 5222.37,
     "mileage": 48000,
     "transmission": "Automatic",
     "fuel": "Petrol",
     "condition": "Foreign Used",
     "location": "Kano",
-    "description": "Reliable 2019 Nissan Altima with fuel-efficient engine and comfortable interior.",
+    "description": "Well-maintained 2014 Hyundai Elantra with efficient engine, modern features, and comfortable interior. Ideal for daily commuting and city driving.",
     "features": [
-      "CVT Transmission",
-      "Smart Key",
-      "Rear Camera",
-      "Touch Screen",
-      "USB Ports"
+      "Air Conditioning",
+      "Bluetooth Connectivity",
+      "Touchscreen Display",
+      "Rearview Camera",
+      "USB/Aux Input",
+      "Power Windows",
+      "Remote Keyless Entry",
+      "Cruise Control",
+      "ABS",
+      "Alloy Wheels"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&h=600&fit=crop"
+      "https://pbs.twimg.com/media/GxlN9x2XQAAkyow?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GxlN9y6W0AAHtBN?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GxlN_ceXsAAYXgN?format=jpg&name=large"
     ],
     "featured": false,
     "newly_arrived": false,
@@ -170,45 +195,48 @@
   {
     "id": "7",
     "brand": "Ford",
-    "model": "Explorer",
-    "year": 2020,
-    "price": 11200000,
-    "priceUSD": 7240,
+    "model": "Focus",
+    "year": 2014,
+    "price": 5000000,
+    "priceUSD": 3263.98,
     "mileage": 41000,
     "transmission": "Automatic",
     "fuel": "Petrol",
     "condition": "Foreign Used",
     "location": "Abuja",
-    "description": "Spacious Ford Explorer SUV perfect for families. Excellent condition with 7-seater capacity.",
+    "description": "Well-maintained 2014 Ford Focus offering great fuel efficiency and a comfortable ride. Ideal for city driving with modern features and low mileage.",
     "features": [
-      "7 Seats",
-      "4WD",
-      "Towing Package",
-      "Third Row",
-      "Power Liftgate",
-      "SYNC 3"
+      "Air Conditioning",
+      "Bluetooth",
+      "Cruise Control",
+      "Power Windows",
+      "Anti-lock Braking System (ABS)",
+      "Rear Parking Sensors"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&h=600&fit=crop"
+      "https://pbs.twimg.com/media/GxlTYqzWQAALHlw?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GxlTYr0WAAAu3id?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GxlTYrxXwAABRGn?format=jpg&name=large"
     ],
     "featured": false,
     "newly_arrived": true,
-    "date_added": "2025-08-06"
+    "date_added": "2025-08-05"
   },
   {
     "id": "8",
     "brand": "Hyundai",
-    "model": "Elantra",
-    "year": 2021,
-    "price": 5800000,
-    "priceUSD": 3750,
+    "model": "Santa Fe",
+    "year": 2017,
+    "price": 15000000,
+    "priceUSD": 9791.95,
     "mileage": 22000,
     "transmission": "Automatic",
     "fuel": "Petrol",
     "condition": "Foreign Used",
     "location": "Lagos",
-    "description": "Nearly new 2021 Hyundai Elantra with low mileage and comprehensive warranty.",
+    "description": "Nearly new 2021 Hyundai Santa Fe with low mileage and comprehensive warranty.",
     "features": [
+      "Double Panoramic Sunroof",
       "Apple CarPlay",
       "Android Auto",
       "Lane Keep Assist",
@@ -216,61 +244,77 @@
       "Wireless Charging"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1607603750916-9c2d2ba5a78e?w=800&h=600&fit=crop"
+      "https://pbs.twimg.com/media/Gx9zQ7-WsAAS4dq?format=jpg&name=large",
+      "https://pbs.twimg.com/media/Gx9uCNqXsAAX0UM?format=jpg&name=large",
+      "https://pbs.twimg.com/media/Gx9uBODWIAAJA_A?format=jpg&name=large"
     ],
     "featured": false,
     "newly_arrived": true,
-    "date_added": "2025-08-08"
+    "date_added": "2025-08-10"
   },
   {
     "id": "9",
-    "brand": "Volkswagen",
-    "model": "Jetta",
-    "year": 2018,
-    "price": 6200000,
-    "priceUSD": 4000,
+    "brand": "Acura",
+    "model": "ZDX",
+    "year": 2010,
+    "price": 9300000,
+    "priceUSD": 6071.01,
     "mileage": 58000,
     "transmission": "Automatic",
     "fuel": "Petrol",
     "condition": "Foreign Used",
-    "location": "Ibadan",
-    "description": "Well-maintained Volkswagen Jetta with German engineering and reliability.",
+    "location": "Delta",
+    "description": "Clean 2010 Acura ZDX with distinctive coupe styling, luxury interior, and advanced tech features. Smooth ride and reliable performance, ideal for both city and highway driving.",
     "features": [
-      "Turbo Engine",
-      "Digital Cockpit",
-      "App-Connect",
-      "Blind Spot Monitor",
-      "Rear Cross Traffic Alert"
+      "Keyless Entry",
+      "All-Wheel Drive",
+      "Panoramic Sunroof",
+      "Leather Seats",
+      "Navigation System",
+      "Bluetooth Connectivity",
+      "Backup Camera",
+      "Heated Front Seats",
+      "Dual Zone Climate Control",
+      "Power Liftgate"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&h=600&fit=crop"
+      "https://pbs.twimg.com/media/GxQe60GX0AAwKtH?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GxQe6z-XAAAjhhY?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GxQe60BW0AArRRR?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GxQe60AWEAAAsON?format=jpg&name=large"
     ],
     "featured": false,
     "newly_arrived": false,
-    "date_added": "2025-07-18"
+    "date_added": "2025-08-01"
   },
   {
     "id": "10",
-    "brand": "Mazda",
-    "model": "CX-5",
-    "year": 2020,
-    "price": 8900000,
+    "brand": "Honda",
+    "model": "Crosstour",
+    "year": 2013,
+    "price": 11000000,
     "priceUSD": 5750,
     "mileage": 39000,
     "transmission": "Automatic",
     "fuel": "Petrol",
     "condition": "Foreign Used",
     "location": "Lagos",
-    "description": "Stylish Mazda CX-5 crossover SUV with premium interior and advanced safety features.",
+    "description": "Well-maintained 2013 Honda Crosstour with spacious interior, smooth ride, and advanced comfort features. Reliable performance and stylish design, ideal for family and city driving.",
     "features": [
-      "AWD",
-      "Bose Audio",
-      "Head-Up Display",
-      "Adaptive Cruise Control",
-      "Smart Brake Support"
+      "All-Wheel Drive (AWD)",
+      "Leather Seats",
+      "Sunroof",
+      "Dual Zone Climate Control",
+      "Bluetooth Connectivity",
+      "Backup Camera",
+      "Power Driver Seat",
+      "Keyless Entry",
+      "Premium Audio System"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&h=600&fit=crop"
+      "https://pbs.twimg.com/media/GxQak_YW8AA0o6T?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GxQak_YWIAMVo76?format=jpg&name=large",
+      "https://pbs.twimg.com/media/GxQak_bWkAA3Gkf?format=jpg&name=large"
     ],
     "featured": false,
     "newly_arrived": false,

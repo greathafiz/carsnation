@@ -87,7 +87,7 @@ function CarsPageContent() {
   );
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 min-h-screen bg-zinc-50">
+    <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 min-h-screen bg-zinc-50">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-zinc-900 mb-4">All Cars</h1>
         <p className="text-zinc-600">
@@ -239,7 +239,7 @@ function CarsPageContent() {
       </div>
 
       {/* Cars Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:gap-6">
         {filteredAndSortedCars.map((car) => (
           <CarCard key={car.id} car={car} />
         ))}

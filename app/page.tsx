@@ -137,7 +137,8 @@ export default function Home() {
             Ready to Find Your Dream Car?
           </h2>
           <p className="text-xl mb-8 text-zinc-300">
-            Browse our complete inventory or get in touch with our experts
+            Browse our complete inventory, sell your car, or get in touch with
+            our experts
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -145,6 +146,12 @@ export default function Home() {
               className="bg-white text-zinc-800 hover:bg-zinc-100 px-8 py-3 rounded-lg font-semibold transition-colors"
             >
               Browse All Cars
+            </Link>
+            <Link
+              href="/sell-your-car"
+              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Sell Your Car
             </Link>
             <a
               href="https://wa.me/+2349026446912"
